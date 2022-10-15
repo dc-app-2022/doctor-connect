@@ -1,0 +1,46 @@
+.diagnosis-list {
+  margin-bottom: 1.5rem;
+
+  .list-group {
+    list-style: none;
+    padding: 0px;
+    margin-top: 0.25rem;
+
+    li.list-item {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--body-gray-300);
+      border-radius: 0.3rem;
+      margin-bottom: 0.5rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--body-gray-300);
+      }
+
+      span {
+        color: var(--body-gray-600);
+        font-weight: 500;
+        display: none;
+      }
+
+      .summary {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--body-gray-200);
+
+        .summary-text {
+          font-size: 0.85rem;
+          padding: 0.5rem 1rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      .description {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}

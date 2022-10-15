@@ -1,0 +1,16 @@
+section.dashboard-section {
+  padding-top: clamp(150px, 30vh, 350px);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: clamp(150px, 30vh, 350px);
+    background-color: var(--brand-primary);
+    position: absolute;
+    top: 0px;
+  }
+
+  .search-from {
+    margin-top: -70px;
+  }
+}

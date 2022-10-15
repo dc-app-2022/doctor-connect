@@ -1,0 +1,30 @@
+.form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  justify-content: stretch;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--body-gray-600);
+    color: var(--body-gray-600);
+    font-size: var(--body-font-md);
+    line-height: var(--body-line-height);
+    letter-spacing: var(--body-letter-spacing-md);
+    transition-duration: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: var(--brand-primary);
+      columns: var(--body-dark);
+    }
+  }
+}

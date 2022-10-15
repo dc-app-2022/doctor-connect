@@ -1,0 +1,53 @@
+.auth-container {
+  background-image: url("../../assets/images/backgrounds/nature_bg_1920.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.auth-card {
+  min-height: 60vh;
+  width: 100%;
+  max-width: 800px;
+  margin: 0rem auto;
+  background-color: #ffffff;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 0.75rem;
+  overflow: hidden;
+
+  .theme-container {
+    width: 40%;
+    padding: 2rem;
+    background: rgb(104, 17, 144);
+    background-image: url("../../assets/images/backgrounds/doctor.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .form-conatiner {
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .auth-container {
+    background: none;
+    padding: 0;
+  }
+  .auth-card {
+    border-radius: 0;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .theme-container {
+    display: none !important;
+  }
+}
